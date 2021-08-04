@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   text-align: justify;
   line-height: 1.5;
@@ -133,7 +133,7 @@ h3 {
   gap: 3rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .grid-1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -418,4 +418,18 @@ h3 {
   padding: 0;
   color: var(--color-white);
   text-align: left;
+}
+
+/* about me */
+
+.about__image {
+  width: 40rem;
+  height: 40rem;
+  border-radius: 7px;
+  object-fit: cover;
+  justify-self: center;
+}
+
+.about__content h3 {
+  margin: 0;
 }
