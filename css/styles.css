@@ -204,3 +204,33 @@ h3 {
 .card:hover .card__container {
   transform: scale(1.05);
 }
+
+/* line */
+.line {
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.line__title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 550;
+}
+
+.line__part {
+  display: inline-block;
+  width: 100%;
+  height: 5px;
+  background: lightgrey;
+  position: relative;
+}
+
+.line__part::before {
+  position: absolute;
+  background: var(--color-basic);
+  left: 0;
+  top: 0;
+  height: 100%;
+  content: "";
+  width: var(--percent);
+}
