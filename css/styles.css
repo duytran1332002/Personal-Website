@@ -255,8 +255,8 @@ h3 {
 /* container */
 
 .container {
-  max-width: 1104px;
-  margin: 0 auto;
+  max-width: 2000px;
+  padding: 0 2.5rem;
 }
 
 /* info */
@@ -280,4 +280,85 @@ h3 {
 
 .info_detail {
   color: lightgray;
+}
+
+/* navigate bar */
+.navbar {
+  background: var(--color-background);
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  z-index: 999;
+}
+
+.navbar__logo {
+  font-weight: 600;
+  font-size: 3.5rem;
+  padding: 0;
+}
+.navbar__logo span {
+  color: var(--color-basic);
+}
+.navbar__menu {
+  position: fixed;
+  background: #111;
+  left: -100%;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  padding: 8rem 0;
+  transition: left 0.3s ease;
+  list-style: none;
+}
+
+.navbar__item {
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+.navbar__item:hover {
+  background: var(--color-basic);
+  transform: scale(1.05);
+}
+.navbar__item a {
+  color: var(--color-white);
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+.menu__btn {
+  z-index: 9999;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.navbar__menu.active {
+  left: 0;
+}
+
+.menu__btn i.active::before {
+  content: "\f00d";
+}
+
+@media screen and (min-width: 900px) {
+  .menu__btn {
+    opacity: 0;
+  }
+  .navbar__menu {
+    display: flex;
+    position: unset;
+    height: 1%;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+  }
+
+  .navbar__item {
+    margin: 0 2rem 0 0;
+  }
+
+  .navbar__item:hover a {
+    color: var(--color-basic);
+    background: var(--color-background);
+  }
 }
