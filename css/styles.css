@@ -50,7 +50,7 @@ h3 {
   font-size: 2.5rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1104px) {
   body {
     font-size: 2rem;
   }
@@ -116,7 +116,7 @@ h3 {
   transform: translateX(-50%);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1104px) {
   .title::after {
     font-size: 2rem;
   }
@@ -250,4 +250,34 @@ h3 {
   border: 1px solid lightgray;
   margin: 1rem;
   width: 100%;
+}
+
+/* container */
+
+.container {
+  max-width: 1104px;
+  margin: 0 auto;
+}
+
+/* info */
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.info .fas {
+  margin-right: 3rem;
+}
+
+.info__content {
+  font-size: 1.8rem;
+}
+
+.info__head {
+  font-weight: 600;
+}
+
+.info_detail {
+  color: lightgray;
 }
