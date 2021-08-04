@@ -39,6 +39,15 @@ h3 {
 h2,
 h3 {
   font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -50,11 +59,11 @@ h3 {
   }
 
   h2 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   h3 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -62,16 +71,53 @@ h3 {
 
 .btn {
   background: var(--color-basic);
-  color: var(--color-white);
-  padding: 1rem 2rem;
-  outline: none;
-  border: 2px solid var(--color-basic);
-  font-weight: 500;
   border-radius: 7px;
+  border: 2px solid var(--color-basic);
+  color: var(--color-white);
+  font-weight: 500;
+  outline: none;
+  padding: 1rem 2rem;
   transition: all 0.3s ease;
 }
 
 .btn:hover {
   background: none;
   color: var(--color-basic);
+}
+
+/* title */
+
+.title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.title::before {
+  background-color: var(--color-background);
+  bottom: 0px;
+  content: "";
+  height: 4px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 17rem;
+}
+
+.title::after {
+  content: "who i am";
+  position: absolute;
+  color: var(--color-basic);
+  background: var(--color-white);
+  left: 50%;
+  bottom: -12px;
+  padding: 1px 1rem;
+  font-size: 1.8rem;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 1024px) {
+  .title::after {
+    font-size: 2rem;
+  }
 }
