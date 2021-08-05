@@ -28,6 +28,10 @@ a {
   text-decoration: none;
 }
 
+section {
+  padding: 10rem 0;
+}
+
 /*Typography*/
 
 h1,
@@ -154,7 +158,13 @@ h3 {
 }
 
 .icon-larger {
-  font-size: 5rem;
+  font-size: 4rem;
+}
+
+@media screen and (min-width: 648px) {
+  .icon-larger {
+    font-size: 5rem;
+  }
 }
 
 /* card */
@@ -164,10 +174,10 @@ h3 {
   text-align: center;
   border-radius: 7px;
   padding: 5rem 2.5rem;
-  width: calc(50% - 20px);
+  width: 100%;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin: 2rem 2rem;
+  margin-bottom: 2rem;
 }
 
 .card__container {
@@ -207,6 +217,17 @@ h3 {
 }
 .card:hover .card__container {
   transform: scale(1.05);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: calc(50% - 10px);
+  }
+}
+@media screen and (min-width: 947px) {
+  .card {
+    width: calc(33% - 20px);
+  }
 }
 
 /* line */
@@ -421,7 +442,9 @@ h3 {
 }
 
 /* about me */
-
+.about .title::after {
+  content: "who i am";
+}
 .about__image {
   width: 40rem;
   height: 40rem;
@@ -432,4 +455,42 @@ h3 {
 
 .about__content h3 {
   margin: 0;
+}
+
+/* theme */
+
+.theme-dark {
+  background: var(--color-background);
+}
+
+.theme-dark .title {
+  color: var(--color-white);
+}
+
+.theme-dark .title::before {
+  background: var(--color-white);
+}
+
+.theme-dark .title::after {
+  background: var(--color-background);
+}
+/* services */
+
+.services .title::after {
+  content: "what i provide";
+}
+
+.services__cotainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .services__cotainer {
+    flex-direction: row;
+  }
 }
