@@ -273,7 +273,7 @@ h3 {
   border-radius: 7px;
   padding: 1.2rem 1rem;
   border: 1px solid lightgray;
-  margin: 1rem;
+  margin-bottom: 1.5rem;
   width: 100%;
 }
 
@@ -300,6 +300,7 @@ h3 {
 .info {
   display: flex;
   align-items: center;
+  margin: 1rem 0;
 }
 
 .info .fas {
@@ -506,4 +507,58 @@ h3 {
 
 .skills__detail {
   align-self: center;
+}
+
+/* teams */
+
+.teams .title::after {
+  content: "who with me";
+}
+
+.carousel .card {
+  width: 100%;
+  overflow: hidden;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid crimson !important;
+  transition: all 0.3s ease;
+}
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover {
+  background: crimson !important;
+}
+
+/* contacts */
+
+.contact__left-head {
+  padding-bottom: 0;
+}
+
+.name_email {
+  display: flex;
+}
+
+.contact__name {
+  margin-right: 1rem;
+}
+.contact__right .btn {
+  margin: 0;
+}
+.container textarea {
+  resize: none;
+  height: 120px;
 }
