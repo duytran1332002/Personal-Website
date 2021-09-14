@@ -17,7 +17,7 @@ html {
 body {
   font-size: 2.2rem;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  text-align: justify;
+
   line-height: 1.5;
 }
 p {
@@ -127,6 +127,12 @@ h3 {
 @media screen and (min-width: 1104px) {
   .title::after {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title::after {
+    font-size: 1.5rem;
   }
 }
 
@@ -280,8 +286,10 @@ h3 {
 /* container */
 
 .container {
-  max-width: 2000px;
+  max-width: 200rem;
   padding: 0 2.5rem;
+  align-content: center;
+  margin: auto;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -427,9 +435,15 @@ h3 {
   height: 100vh;
   min-height: 500px;
   display: flex;
-  align-items: center;
   line-height: 1.2;
   background-attachment: fixed;
+  background-size: cover;
+  transition: all 0.3s ease;
+}
+
+.home .container {
+  display: flex;
+  width: 100%;
 }
 
 .home__content h1,
@@ -446,7 +460,8 @@ h3 {
   content: "who i am";
 }
 .about__image {
-  width: 40rem;
+  width: 100%;
+  max-width: 400px;
   height: 40rem;
   border-radius: 7px;
   object-fit: cover;
@@ -469,6 +484,7 @@ h3 {
 
 .theme-dark .title::before {
   background: var(--color-white);
+  padding: 0;
 }
 
 .theme-dark .title::after {
@@ -561,4 +577,47 @@ h3 {
 .container textarea {
   resize: none;
   height: 120px;
+}
+
+/* footer section styling */
+footer {
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* scroll up  btn */
+
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: crimson;
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  z-index: 9999;
+  font-size: 30px;
+  border-radius: 6px;
+  border-bottom-width: 2px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.scroll-up-btn:hover {
+  filter: brightness(90%);
 }

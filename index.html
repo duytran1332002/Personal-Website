@@ -19,10 +19,315 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Document</title>
   </head>
   <body>
+    <div class="scroll-up-btn">
+      <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar" data-aos="fade-up">
+      <div class="container">
+        <h3 class="navbar__logo">Porfo<span>lio.</span></h3>
+        <ul class="navbar__menu">
+          <li class="navbar__item"><a href="#home">Home</a></li>
+          <li class="navbar__item"><a href="#about">About</a></li>
+          <li class="navbar__item"><a href="#services">Services</a></li>
+          <li class="navbar__item"><a href="#skills">Skills</a></li>
+          <li class="navbar__item"><a href="#teams">Teams</a></li>
+          <li class="navbar__item"><a href="#contacts">Contacts</a></li>
+        </ul>
+        <div class="menu__btn"><i class="fas fa-bars icon-white"></i></div>
+      </div>
+    </nav>
+
+    <section class="home" id="home">
+      <div class="container">
+        <div class="home__content" data-aos="fade-up">
+          <h3>Hello, my name is</h3>
+          <h1>Prakash Shahi</h1>
+          <h2>An I'm a <span class="decor typing"></span></h2>
+          <a class="btn" href="#">Hire me</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about" data-aos="fade-up">
+      <div class="container">
+        <h2 class="title">About me</h2>
+        <div class="grid grid-1x2">
+          <img
+            class="about__image"
+            src="images/profile-1.jpeg"
+            alt="It is author picture"
+            data-aos="fade-right"
+          />
+          <div class="about__content" data-aos="fade-left">
+            <h3>
+              I'm Prakash and I'm a <span class="decor typing-2">Youtube</span>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+              deleniti. Repellendus odio ex facere quaerat totam ab distinctio
+              rerum. Beatae, alias facilis fugiat delectus placeat minus,
+              praesentium repellendus error consequatur ducimus tenetur impedit
+              vitae corrupti dolorem animi ex veritatis minima rerum quo quis
+              hic voluptate dignissimos earum ea? Nisi, ducimus.
+            </p>
+            <a class="btn" href="#">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services theme-dark" id="services" data-aos="zoom-in">
+      <div class="container">
+        <h2 class="title">My services</h2>
+        <div class="services__cotainer">
+          <div class="card" data-aos="fade-up">
+            <div class="card__container">
+              <i class="fas fa-paint-brush icon-larger icon-crimson"></i>
+              <h3 class="card__title">Web Designs</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                distinctio optio architecto doloribus accusamus quibusdam.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" data-aos="fade-up">
+            <div class="card__container">
+              <i class="fas fa-chart-line icon-larger icon-crimson"></i>
+              <h3 class="card__title">Advertising</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                distinctio optio architecto doloribus accusamus quibusdam.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" data-aos="fade-up">
+            <div class="card__container">
+              <i class="fas fa-code icon-larger icon-crimson"></i>
+              <h3 class="card__title">Apps Design</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                distinctio optio architecto doloribus accusamus quibusdam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills" data-aos="zoom-out">
+      <div class="container">
+        <h2 class="title">My skills</h2>
+        <div class="grid grid-1x2">
+          <div class="skills__content" data-aos="fade-right">
+            <h3 class="skills__content-head">
+              My creative skills & experiences.
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos, ratione error est recusandae consequatur, iusto illum
+              deleniti quidem impedit, quos quaerat quis minima sequi.
+              Cupiditate recusandae laudantium esse, harum animi aspernatur
+              quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem
+              illum. Ad delectus natus aut hic explicabo minus quod.
+            </p>
+            <a class="btn" href="#">Read more</a>
+          </div>
+          <div class="skills__detail" data-aos="fade-left">
+            <div class="line">
+              <div class="line__title">
+                <div>HTML</div>
+                <div>90%</div>
+              </div>
+              <span class="line__part" style="--percent: 90%"></span>
+            </div>
+
+            <div class="line">
+              <div class="line__title">
+                <div>CSS</div>
+                <div>60%</div>
+              </div>
+              <span class="line__part" style="--percent: 60%"></span>
+            </div>
+
+            <div class="line">
+              <div class="line__title">
+                <div>JavaScript</div>
+                <div>80%</div>
+              </div>
+              <span class="line__part" style="--percent: 90%"></span>
+            </div>
+
+            <div class="line">
+              <div class="line__title">
+                <div>PHP</div>
+                <div>50%</div>
+              </div>
+              <span class="line__part" style="--percent: 50%"></span>
+            </div>
+
+            <div class="line">
+              <div class="line__title">
+                <div>MySQL</div>
+                <div>70%</div>
+              </div>
+              <span class="line__part" style="--percent: 70%"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="teams theme-dark" id="teams" data-aos="zoom-in-up">
+      <div class="container">
+        <h2 class="title">My teams</h2>
+        <div class="carousel owl-carousel" data-aos="flip-left">
+          <div class="card card-image">
+            <div class="card__container">
+              <img src="images/profile-1.jpeg" alt="" />
+              <h3 class="card__title">Someone Name</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                distinctio optio architecto doloribus accusamus quibusdam.
+              </p>
+            </div>
+          </div>
+
+          <div class="card card-image">
+            <div class="card__container">
+              <img src="images/profile-2.jpeg" alt="" />
+              <h3 class="card__title">Someone Name</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                distinctio optio architecto doloribus accusamus quibusdam.
+              </p>
+            </div>
+          </div>
+
+          <div class="card card-image">
+            <div class="card__container">
+              <img src="images/profile-3.jpeg" alt="" />
+              <h3 class="card__title">Someone Name</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                distinctio optio architecto doloribus accusamus quibusdam.
+              </p>
+            </div>
+          </div>
+
+          <div class="card card-image">
+            <div class="card__container">
+              <img src="images/profile-4.jpeg" alt="" />
+              <h3 class="card__title">Someone Name</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                distinctio optio architecto doloribus accusamus quibusdam.
+              </p>
+            </div>
+          </div>
+
+          <div class="card card-image">
+            <div class="card__container">
+              <img src="images/profile-5.jpeg" alt="" />
+              <h3 class="card__title">Someone Name</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                distinctio optio architecto doloribus accusamus quibusdam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts" data-aos="zoom-in-up">
+      <div class="container">
+        <h2 class="title">Contact me</h2>
+        <div class="grid grid-1x2">
+          <div class="contact__left" data-aos="fade-right">
+            <h3 class="contact__left-head">Get in touch</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex ut
+              eligendi numquam soluta assumenda maxime minus exercitationem sed
+              vitae cumque?
+            </p>
+            <div class="info">
+              <i class="fas fa-user icon-crimson"></i>
+              <div class="info__content">
+                <div class="info__head">Name</div>
+                <div class="info__detail">Nhut Duy</div>
+              </div>
+            </div>
+
+            <div class="info">
+              <i class="fas fa-map-marker-alt icon-crimson"></i>
+              <div class="info__content">
+                <div class="info__head">Address</div>
+                <div class="info__detail">62/11, Hang Tre</div>
+              </div>
+            </div>
+
+            <div class="info">
+              <i class="fas fa-envelope icon-crimson"></i>
+              <div class="info__content">
+                <div class="info__head">Email</div>
+                <div class="info__detail">crackonebrain@gmail.com</div>
+              </div>
+            </div>
+          </div>
+          <div class="contact__right" data-aos="fade-left">
+            <h3 class="contact__left-head">Message me</h3>
+            <form action="#">
+              <div class="name_email">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="input contact__name"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="input contact__email"
+                />
+              </div>
+              <input
+                type="text"
+                placeholder="Subject"
+                class="input contact__subject"
+              />
+              <textarea
+                class="input contact__texarea"
+                placeholder="Message ..."
+                cols="30"
+                rows="10"
+              ></textarea>
+              <button class="btn" type="submit">Send message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer class="theme-dark">
+      <span
+        >Created By
+        <a class="decor" href="https://www.codingnepalweb.com">CodingNepal</a> |
+        <span class="far fa-copyright"></span> 2020 All rights reserved.</span
+      >
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script src="main/script.js"></script>
   </body>
 </html>
